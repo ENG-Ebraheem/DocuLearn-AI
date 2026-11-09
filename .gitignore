@@ -1,0 +1,46 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Python cache & build
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Virtual Environments
+.venv/
+.venv*/
+app/.venv/
+**/venv/
+**/env/
+**/ENV/
+
+# Data & Storage (Local artifacts & database)
+data/uploads/*
+!data/uploads/.gitkeep
+data/vector_store/*
+!data/vector_store/.gitkeep
+data/*.db
+data/*.sqlite3
+
+# Testing & Linting
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Agent workspace
+.agents/
+
+# IDE & OS
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
